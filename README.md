@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LigaPro
 
-## Getting Started
+Schedules, results, standings and top scorers for amateur leagues and tournaments
+(futsal, basketball, company leagues). Organizers manage everything from their phone;
+players and fans follow the league through one public link, without an account.
 
-First, run the development server:
+**Status:** week 1 of the MVP: project setup, database schema, organizer sign-in.
+
+## Stack
+
+- Next.js 16 (App Router, Server Actions, Proxy) + TypeScript + Tailwind CSS 4
+- Supabase: Postgres, Row Level Security, passwordless e-mail sign-in
+- Deploy target: Vercel
+
+## Getting started
+
+1. Create a Supabase project and run `supabase/migrations/0001_initial_schema.sql` in the SQL editor.
+2. In Supabase → Authentication → URL Configuration, add `http://localhost:3000/auth/callback`
+   as a redirect URL.
+3. Copy `.env.example` to `.env.local` and fill in the project URL and anon key.
+4. Run:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Database
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Table | Purpose |
+|---|---|
+| `competitions` | a league or tournament, owned by one organizer |
+| `teams`, `players` | teams in a competition and their players |
+| `matches` | fixtures by round, with status and score |
+| `match_events` | goals, own goals, yellow and red cards |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`standings` and `top_scorers` are views, so the table is always computed from results and can't drift.
+Row Level Security makes every competition public to read and writable only by its owner.
 
-## Learn More
+## Roadmap
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. ✅ Setup, schema, sign-in
+2. Create a league, add teams, generate the round-robin schedule (`src/lib/schedule.ts`, tested)
+3. Enter results, scorers and cards; live standings
+4. Public league page and PWA; deploy to Vercel
+5. Pilot with a real league organizer; then subscriptions (Stripe) and sponsor slots
