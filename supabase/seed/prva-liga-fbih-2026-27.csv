@@ -1,0 +1,89 @@
+round,date,home,away,home_goals,away_goals
+1,15.08.2026,Bratstvo,Posušje,0,3
+1,26.08.2026,Igman,Stupčanica,0,3
+1,16.08.2026,Čapljina,Jedinstvo,2,2
+1,16.08.2026,Rudar,Travnik,0,1
+1,16.08.2026,NK Vitez,Sloboda,0,0
+1,16.08.2026,Tomislav,GOŠK,0,3
+1,16.08.2026,Budućnost,Radnik,0,0
+1,15.08.2026,Tošk,Zvijezda,1,0
+2,22.08.2026,Posušje,Zvijezda,1,0
+2,22.08.2026,Radnik,Tošk,2,0
+2,23.08.2026,GOŠK,Budućnost,4,1
+2,23.08.2026,Sloboda,Tomislav,3,0
+2,23.08.2026,Travnik,NK Vitez,2,0
+2,22.08.2026,Jedinstvo,Rudar,5,0
+2,23.08.2026,Stupčanica,Čapljina,5,0
+2,22.08.2026,Bratstvo,Igman,0,0
+3,29.08.2026,Igman,Posušje,1,1
+3,29.08.2026,Čapljina,Bratstvo,2,1
+3,29.08.2026,Rudar,Stupčanica,0,2
+3,29.08.2026,NK Vitez,Jedinstvo,1,1
+3,29.08.2026,Tomislav,Travnik,2,4
+3,30.08.2026,Budućnost,Sloboda,3,2
+3,29.08.2026,Tošk,GOŠK,0,1
+3,29.08.2026,Zvijezda,Radnik,2,0
+4,05.09.2026,Posušje,Radnik,2,1
+4,06.09.2026,GOŠK,Zvijezda,1,0
+4,05.09.2026,Sloboda,Tošk,4,2
+4,05.09.2026,Travnik,Budućnost,3,0
+4,05.09.2026,Jedinstvo,Tomislav,4,0
+4,06.09.2026,Stupčanica,NK Vitez,3,1
+4,05.09.2026,Bratstvo,Rudar,1,0
+4,05.09.2026,Igman,Čapljina,4,0
+5,12.09.2026,Čapljina,Posušje,0,1
+5,12.09.2026,Rudar,Igman,0,1
+5,12.09.2026,NK Vitez,Bratstvo,2,2
+5,12.09.2026,Tomislav,Stupčanica,2,1
+5,12.09.2026,Budućnost,Jedinstvo,2,2
+5,13.09.2026,Tošk,Travnik,1,2
+5,12.09.2026,Zvijezda,Sloboda,1,1
+5,12.09.2026,Radnik,GOŠK,0,1
+6,20.09.2026,Posušje,GOŠK,1,0
+6,19.09.2026,Sloboda,Radnik,3,0
+6,20.09.2026,Travnik,Zvijezda,1,0
+6,19.09.2026,Jedinstvo,Tošk,0,1
+6,20.09.2026,Stupčanica,Budućnost,4,1
+6,19.09.2026,Bratstvo,Tomislav,2,2
+6,19.09.2026,Igman,NK Vitez,1,0
+6,19.09.2026,Čapljina,Rudar,1,2
+7,26.09.2026,Rudar,Posušje,1,1
+7,26.09.2026,NK Vitez,Čapljina,1,0
+7,27.09.2026,Tomislav,Igman,2,2
+7,26.09.2026,Budućnost,Bratstvo,1,1
+7,27.09.2026,Tošk,Stupčanica,2,0
+7,26.09.2026,Zvijezda,Jedinstvo,3,1
+7,26.09.2026,Radnik,Travnik,0,1
+7,27.09.2026,GOŠK,Sloboda,0,2
+8,03.10.2026,Posušje,Sloboda,2,0
+8,03.10.2026,Travnik,GOŠK,2,2
+8,03.10.2026,Jedinstvo,Radnik,0,2
+8,03.10.2026,Stupčanica,Zvijezda,1,1
+8,03.10.2026,Bratstvo,Tošk,1,3
+8,03.10.2026,Igman,Budućnost,2,1
+8,03.10.2026,Čapljina,Tomislav,4,2
+8,03.10.2026,Rudar,NK Vitez,2,0
+9,10.10.2026,NK Vitez,Posušje,1,2
+9,10.10.2026,Tomislav,Rudar,1,0
+9,10.10.2026,Budućnost,Čapljina,1,0
+9,11.10.2026,Tošk,Igman,1,1
+9,10.10.2026,Zvijezda,Bratstvo,0,1
+9,10.10.2026,Radnik,Stupčanica,1,3
+9,11.10.2026,GOŠK,Jedinstvo,1,2
+9,10.10.2026,Sloboda,Travnik,2,0
+10,18.10.2026,Posušje,Travnik,1,0
+10,17.10.2026,Jedinstvo,Sloboda,0,0
+10,18.10.2026,Stupčanica,GOŠK,1,1
+10,17.10.2026,Bratstvo,Radnik,2,1
+10,17.10.2026,Igman,Zvijezda,1,0
+10,17.10.2026,Čapljina,Tošk,1,1
+10,17.10.2026,Rudar,Budućnost,1,1
+10,17.10.2026,NK Vitez,Tomislav,2,1
+11,24.10.2026,Tomislav,Posušje,1,3
+11,24.10.2026,Budućnost,NK Vitez,1,2
+11,25.10.2026,Tošk,Rudar,5,1
+11,24.10.2026,Zvijezda,Čapljina,4,1
+11,24.10.2026,Radnik,Igman,2,1
+11,25.10.2026,GOŠK,Bratstvo,2,0
+11,24.10.2026,Sloboda,Stupčanica,1,0
+11,24.10.2026,Travnik,Jedinstvo,4,0

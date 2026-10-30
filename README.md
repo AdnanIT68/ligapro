@@ -45,3 +45,10 @@ Row Level Security makes every competition public to read and writable only by i
 3. Enter results, scorers and cards; live standings
 4. Public league page and PWA; deploy to Vercel
 5. Pilot with a real league organizer; then subscriptions (Stripe) and sponsor slots
+
+## Demo data
+
+`supabase/seed/prva-liga-fbih-2026-27.csv` holds the real results of rounds 1–11 of the 2026/27
+First League of FBiH (Prva liga FBiH), taken from the public results on
+[sportdc.net](https://sportdc.net/league/6400-prva-liga-fbih). The standings LigaPro computes from them match
+the official table exactly. `prva-liga-fbih-2026-27.sql` loads them for the organizer account it names.
