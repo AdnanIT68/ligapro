@@ -1,0 +1,153 @@
+round,date,time,home,away
+12,31.10.2026,17:00,Posušje,Jedinstvo
+12,31.10.2026,13:30,Stupčanica,Travnik
+12,31.10.2026,13:30,Bratstvo,Sloboda
+12,31.10.2026,13:30,Igman,GOŠK
+12,31.10.2026,13:30,Čapljina,Radnik
+12,31.10.2026,13:30,Rudar,Zvijezda
+12,31.10.2026,13:30,NK Vitez,Tošk
+12,31.10.2026,13:30,Tomislav,Budućnost
+13,07.11.2026,13:30,Budućnost,Posušje
+13,07.11.2026,13:30,Tošk,Tomislav
+13,08.11.2026,13:30,Zvijezda,NK Vitez
+13,07.11.2026,13:30,Radnik,Rudar
+13,08.11.2026,13:30,GOŠK,Čapljina
+13,07.11.2026,13:30,Sloboda,Igman
+13,08.11.2026,13:30,Travnik,Bratstvo
+13,07.11.2026,13:30,Jedinstvo,Stupčanica
+14,14.11.2026,13:30,Posušje,Stupčanica
+14,14.11.2026,13:30,Bratstvo,Jedinstvo
+14,14.11.2026,13:30,Igman,Travnik
+14,14.11.2026,13:30,Čapljina,Sloboda
+14,14.11.2026,13:30,Rudar,GOŠK
+14,14.11.2026,13:30,NK Vitez,Radnik
+14,14.11.2026,13:30,Tomislav,Zvijezda
+14,14.11.2026,13:30,Budućnost,Tošk
+15,21.11.2026,13:30,Tošk,Posušje
+15,22.11.2026,13:30,Zvijezda,Budućnost
+15,21.11.2026,13:30,Radnik,Tomislav
+15,22.11.2026,13:30,GOŠK,NK Vitez
+15,21.11.2026,13:30,Sloboda,Rudar
+15,22.11.2026,13:30,Travnik,Čapljina
+15,21.11.2026,13:30,Jedinstvo,Igman
+15,22.11.2026,13:30,Stupčanica,Bratstvo
+16,06.03.2027,15:00,Posušje,Bratstvo
+16,07.03.2027,15:00,Stupčanica,Igman
+16,06.03.2027,15:00,Jedinstvo,Čapljina
+16,07.03.2027,15:00,Travnik,Rudar
+16,06.03.2027,15:00,Sloboda,NK Vitez
+16,07.03.2027,15:00,GOŠK,Tomislav
+16,06.03.2027,15:00,Radnik,Budućnost
+16,07.03.2027,15:00,Zvijezda,Tošk
+17,14.03.2027,15:00,Zvijezda,Posušje
+17,13.03.2027,15:00,Tošk,Radnik
+17,13.03.2027,15:00,Budućnost,GOŠK
+17,13.03.2027,15:00,Tomislav,Sloboda
+17,13.03.2027,15:00,NK Vitez,Travnik
+17,13.03.2027,15:00,Rudar,Jedinstvo
+17,13.03.2027,15:00,Čapljina,Stupčanica
+17,13.03.2027,15:00,Igman,Bratstvo
+18,20.03.2027,15:30,Posušje,Igman
+18,20.03.2027,15:30,Bratstvo,Čapljina
+18,21.03.2027,15:30,Stupčanica,Rudar
+18,20.03.2027,15:30,Jedinstvo,NK Vitez
+18,21.03.2027,15:30,Travnik,Tomislav
+18,20.03.2027,15:30,Sloboda,Budućnost
+18,21.03.2027,15:30,GOŠK,Tošk
+18,20.03.2027,15:30,Radnik,Zvijezda
+19,27.03.2027,15:30,Radnik,Posušje
+19,28.03.2027,15:30,Zvijezda,GOŠK
+19,27.03.2027,15:30,Tošk,Sloboda
+19,27.03.2027,15:30,Budućnost,Travnik
+19,27.03.2027,15:30,Tomislav,Jedinstvo
+19,27.03.2027,15:30,NK Vitez,Stupčanica
+19,27.03.2027,15:30,Rudar,Bratstvo
+19,27.03.2027,15:30,Čapljina,Igman
+20,03.04.2027,16:00,Posušje,Čapljina
+20,03.04.2027,16:00,Igman,Rudar
+20,03.04.2027,16:00,Bratstvo,NK Vitez
+20,04.04.2027,16:00,Stupčanica,Tomislav
+20,03.04.2027,16:00,Jedinstvo,Budućnost
+20,04.04.2027,16:00,Travnik,Tošk
+20,03.04.2027,16:00,Sloboda,Zvijezda
+20,04.04.2027,16:00,GOŠK,Radnik
+21,11.04.2027,16:00,GOŠK,Posušje
+21,10.04.2027,16:00,Radnik,Sloboda
+21,11.04.2027,16:00,Zvijezda,Travnik
+21,10.04.2027,16:00,Tošk,Jedinstvo
+21,10.04.2027,16:00,Budućnost,Stupčanica
+21,10.04.2027,16:00,Tomislav,Bratstvo
+21,10.04.2027,16:00,NK Vitez,Igman
+21,10.04.2027,16:00,Rudar,Čapljina
+22,17.04.2027,17:00,Posušje,Rudar
+22,17.04.2027,17:00,Čapljina,NK Vitez
+22,17.04.2027,17:00,Igman,Tomislav
+22,17.04.2027,17:00,Bratstvo,Budućnost
+22,18.04.2027,17:00,Stupčanica,Tošk
+22,17.04.2027,17:00,Jedinstvo,Zvijezda
+22,18.04.2027,17:00,Travnik,Radnik
+22,17.04.2027,17:00,Sloboda,GOŠK
+23,24.04.2027,17:00,Sloboda,Posušje
+23,25.04.2027,17:00,GOŠK,Travnik
+23,24.04.2027,17:00,Radnik,Jedinstvo
+23,25.04.2027,17:00,Zvijezda,Stupčanica
+23,24.04.2027,17:00,Tošk,Bratstvo
+23,24.04.2027,17:00,Budućnost,Igman
+23,24.04.2027,17:00,Tomislav,Čapljina
+23,24.04.2027,17:00,NK Vitez,Rudar
+24,01.05.2027,17:00,Posušje,NK Vitez
+24,01.05.2027,17:00,Rudar,Tomislav
+24,01.05.2027,17:00,Čapljina,Budućnost
+24,01.05.2027,17:00,Igman,Tošk
+24,01.05.2027,17:00,Bratstvo,Zvijezda
+24,02.05.2027,17:00,Stupčanica,Radnik
+24,01.05.2027,17:00,Jedinstvo,GOŠK
+24,02.05.2027,17:00,Travnik,Sloboda
+25,09.05.2027,17:00,Travnik,Posušje
+25,08.05.2027,17:00,Sloboda,Jedinstvo
+25,09.05.2027,17:00,GOŠK,Stupčanica
+25,08.05.2027,17:00,Radnik,Bratstvo
+25,09.05.2027,17:00,Zvijezda,Igman
+25,08.05.2027,17:00,Tošk,Čapljina
+25,08.05.2027,17:00,Budućnost,Rudar
+25,08.05.2027,17:00,Tomislav,NK Vitez
+26,15.05.2027,17:00,Posušje,Tomislav
+26,15.05.2027,17:00,NK Vitez,Budućnost
+26,15.05.2027,17:00,Rudar,Tošk
+26,15.05.2027,17:00,Čapljina,Zvijezda
+26,15.05.2027,17:00,Igman,Radnik
+26,15.05.2027,17:00,Bratstvo,GOŠK
+26,16.05.2027,17:00,Stupčanica,Sloboda
+26,15.05.2027,17:00,Jedinstvo,Travnik
+27,19.05.2027,17:30,Jedinstvo,Posušje
+27,19.05.2027,17:30,Travnik,Stupčanica
+27,19.05.2027,17:30,Sloboda,Bratstvo
+27,19.05.2027,17:30,GOŠK,Igman
+27,19.05.2027,17:30,Radnik,Čapljina
+27,19.05.2027,17:30,Zvijezda,Rudar
+27,19.05.2027,17:30,Tošk,NK Vitez
+27,19.05.2027,17:30,Budućnost,Tomislav
+28,22.05.2027,17:30,Posušje,Budućnost
+28,22.05.2027,17:30,Tomislav,Tošk
+28,22.05.2027,17:30,NK Vitez,Zvijezda
+28,22.05.2027,17:30,Rudar,Radnik
+28,22.05.2027,17:30,Čapljina,GOŠK
+28,22.05.2027,17:30,Igman,Sloboda
+28,22.05.2027,17:30,Bratstvo,Travnik
+28,23.05.2027,17:30,Stupčanica,Jedinstvo
+29,30.05.2027,17:30,Stupčanica,Posušje
+29,29.05.2027,17:30,Jedinstvo,Bratstvo
+29,30.05.2027,17:30,Travnik,Igman
+29,29.05.2027,17:30,Sloboda,Čapljina
+29,30.05.2027,17:30,GOŠK,Rudar
+29,29.05.2027,17:30,Radnik,NK Vitez
+29,30.05.2027,17:30,Zvijezda,Tomislav
+29,29.05.2027,17:30,Tošk,Budućnost
+30,05.06.2027,17:30,Posušje,Tošk
+30,05.06.2027,17:30,Budućnost,Zvijezda
+30,05.06.2027,17:30,Tomislav,Radnik
+30,05.06.2027,17:30,NK Vitez,GOŠK
+30,05.06.2027,17:30,Rudar,Sloboda
+30,05.06.2027,17:30,Čapljina,Travnik
+30,05.06.2027,17:30,Igman,Jedinstvo
+30,05.06.2027,17:30,Bratstvo,Stupčanica

@@ -42,6 +42,12 @@ async function PublicLeague({ params }: PageProps<"/l/[slug]">) {
   const { supabase, competition } = await getCompetition(slug);
   if (!competition) notFound();
   const league = await loadLeague(supabase, competition.id);
+  const allRounds = [...league.rounds.keys()];
+  // Latest results first; the next round gets its own section above.
+  const playedRounds = allRounds
+    .filter((r) => r !== league.nextRound && league.rounds.get(r)!.every((g) => g.status === "finished"))
+    .reverse();
+  const laterRounds = allRounds.filter((r) => league.nextRound !== null && r > league.nextRound);
 
   return (
     <>
@@ -67,14 +73,30 @@ async function PublicLeague({ params }: PageProps<"/l/[slug]">) {
         </section>
       )}
 
-      <section className="flex flex-col gap-3">
-        <h2 className="text-lg font-semibold">Raspored i rezultati</h2>
-        {league.matches.length > 0 ? (
-          <Fixtures league={league} />
-        ) : (
-          <p className="text-sm text-zinc-500">Raspored još nije objavljen.</p>
-        )}
-      </section>
+      {league.matches.length === 0 && <p className="text-sm text-zinc-500">Raspored još nije objavljen.</p>}
+
+      {league.nextRound !== null && (
+        <section className="flex flex-col gap-3">
+          <h2 className="text-lg font-semibold">Sljedeće kolo</h2>
+          <Fixtures league={league} rounds={[league.nextRound]} />
+        </section>
+      )}
+
+      {playedRounds.length > 0 && (
+        <section className="flex flex-col gap-3">
+          <h2 className="text-lg font-semibold">Rezultati</h2>
+          <Fixtures league={league} rounds={playedRounds} />
+        </section>
+      )}
+
+      {laterRounds.length > 0 && (
+        <details className="group flex flex-col gap-3">
+          <summary className="cursor-pointer text-lg font-semibold">{`Raspored do kraja sezone (${laterRounds.length} kola)`}</summary>
+          <div className="mt-3">
+            <Fixtures league={league} rounds={laterRounds} />
+          </div>
+        </details>
+      )}
     </>
   );
 }

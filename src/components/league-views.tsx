@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { restingTeams, type League } from "@/lib/league-data";
+import { formatKickoff, restingTeams, type League } from "@/lib/league-data";
 
 export function StandingsTable({ league }: { league: League }) {
   return (
@@ -50,11 +50,23 @@ export function ScorersList({ league }: { league: League }) {
   );
 }
 
-/** Fixtures grouped by round; `matchHref` makes each fixture a link (organizer view). */
-export function Fixtures({ league, matchHref }: { league: League; matchHref?: (id: string) => string }) {
+/**
+ * Fixtures grouped by round. `rounds` limits which rounds are shown (in that order);
+ * `matchHref` makes each fixture a link (organizer view).
+ */
+export function Fixtures({
+  league,
+  rounds,
+  matchHref,
+}: {
+  league: League;
+  rounds?: number[];
+  matchHref?: (id: string) => string;
+}) {
+  const shown = (rounds ?? [...league.rounds.keys()]).map((r) => [r, league.rounds.get(r) ?? []] as const);
   return (
     <div className="grid gap-4 sm:grid-cols-2">
-      {[...league.rounds].map(([round, games]) => (
+      {shown.map(([round, games]) => (
         <div key={round} className="rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
           <h3 className="mb-2 font-semibold">{`${round}. kolo`}</h3>
           <ul className="flex flex-col gap-1 text-sm">
@@ -62,9 +74,11 @@ export function Fixtures({ league, matchHref }: { league: League; matchHref?: (i
               const row = (
                 <>
                   <span>{`${league.teamName.get(g.home_team_id)} – ${league.teamName.get(g.away_team_id)}`}</span>
-                  <span className={g.status === "finished" ? "font-semibold" : "text-zinc-400"}>
-                    {g.status === "finished" ? `${g.home_score}:${g.away_score}` : "–:–"}
-                  </span>
+                  {g.status === "finished" ? (
+                    <span className="font-semibold">{`${g.home_score}:${g.away_score}`}</span>
+                  ) : (
+                    <span className="whitespace-nowrap text-xs text-zinc-500">{formatKickoff(g.kickoff_at) || "–:–"}</span>
+                  )}
                 </>
               );
               return (

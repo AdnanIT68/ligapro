@@ -8,6 +8,7 @@ export type Match = {
   home_score: number | null;
   away_score: number | null;
   status: string;
+  kickoff_at: string | null;
 };
 
 export type StandingRow = {
@@ -31,7 +32,7 @@ export async function loadLeague(supabase: SupabaseClient, competitionId: string
     supabase.from("teams").select("id, name").eq("competition_id", competitionId).order("created_at"),
     supabase
       .from("matches")
-      .select("id, round, home_team_id, away_team_id, home_score, away_score, status")
+      .select("id, round, home_team_id, away_team_id, home_score, away_score, status, kickoff_at")
       .eq("competition_id", competitionId)
       .order("round")
       .order("created_at")
@@ -66,6 +67,8 @@ export async function loadLeague(supabase: SupabaseClient, competitionId: string
     standings: standings ?? [],
     scorers: scorers ?? [],
     anyFinished: (matches ?? []).some((m) => m.status === "finished"),
+    // The first round that still has a match to play; null once the season is over.
+    nextRound: [...rounds].find(([, games]) => games.some((g) => g.status !== "finished"))?.[0] ?? null,
   };
 }
 
@@ -75,4 +78,18 @@ export type League = Awaited<ReturnType<typeof loadLeague>>;
 export function restingTeams(league: League, games: Match[]): string[] {
   const playing = new Set(games.flatMap((g) => [g.home_team_id, g.away_team_id]));
   return league.teams.filter((t) => !playing.has(t.id)).map((t) => t.name);
+}
+
+const kickoffFormat = new Intl.DateTimeFormat("bs-BA", {
+  timeZone: "Europe/Sarajevo",
+  weekday: "short",
+  day: "2-digit",
+  month: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit",
+});
+
+/** "sub, 31. 10. 13:30" in Bosnian time; matches without a kick-off time show nothing. */
+export function formatKickoff(kickoff: string | null): string {
+  return kickoff ? kickoffFormat.format(new Date(kickoff)) : "";
 }
