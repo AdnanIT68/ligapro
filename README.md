@@ -4,7 +4,9 @@ Schedules, results, standings and top scorers for amateur leagues and tournament
 (futsal, basketball, company leagues). Organizers manage everything from their phone;
 players and fans follow the league through one public link, without an account.
 
-**Status:** week 1 of the MVP: project setup, database schema, organizer sign-in.
+**Live demo:** [ligapro-three.vercel.app/l/prva-liga-fbih-2026-27](https://ligapro-three.vercel.app/l/prva-liga-fbih-2026-27) (real First League of FBiH results)
+
+**Status:** MVP weeks 1–4 done: schema, sign-in, leagues and schedules, results and standings, public page, PWA.
 
 ## Stack
 
